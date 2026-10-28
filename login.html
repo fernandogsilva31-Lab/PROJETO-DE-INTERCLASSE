@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterClasse Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOGIN ================= -->
+
+    <section id="loginPage" class="login-page">
+
+        <div class="login-card">
+
+            <h1>INTER<span>CLASSE</span></h1>
+
+            <p class="login-subtitle">
+                Entre para acessar a loja
+            </p>
+
+            <form id="loginForm">
+
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="password">Senha</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button type="submit" class="btn-entrar">
+                    Entrar
+                </button>
+
+            </form>
+
+            <p id="loginMessage"></p>
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOJA ================= -->
+
+    <section id="storePage" class="store-page hidden">
+
+        <header>
+
+            <div class="container navbar">
+
+                <div class="logo">
+                    INTER<span>CLASSE</span> STORE
+                </div>
+
+                <button id="cartButton" class="btn-carrinho">
+                    🛒 Carrinho
+                    (<span id="cartCount">0</span>)
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- BANNER -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="colecao">
+                    COLEÇÃO 2026
+                </p>
+
+                <h2>
+                    CAMISAS DE
+                    <span>INTERCLASSE</span>
+                </h2>
+
+                <p>
+                    Escolha sua camisa favorita para o campeonato.
+                </p>
+
+                <div class="preco-banner">
+                    TODAS AS CAMISAS — R$ 45,00
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+
+        <main class="container">
+
+            <div id="products" class="products"></div>
+
+        </main>
+
+
+        <!-- ================= CARRINHO ================= -->
+
+        <div id="cartModal" class="modal hidden">
+
+            <div class="carrinho-box">
+
+                <button id="closeCart" class="fechar">
+                    ×
+                </button>
+
+                <h2>🛒 Seu carrinho</h2>
+
+                <div id="cartItems"></div>
+
+                <div class="total">
+
+                    <span>Total:</span>
+
+                    <strong id="cartTotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+                <button id="finishOrder" class="finalizar">
+                    Finalizar pedido
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+            © 2026 InterClasse Store
+        </footer>
+
+        <footer>Caso tiver duvida ligue para nós 55+ (41)99921-8990</s></footer>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
